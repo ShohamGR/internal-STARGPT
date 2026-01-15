@@ -1,0 +1,35 @@
+autogluon.tabular[mitra]
+catboost
+datasets
+gpustat ; platform_system == "Linux"
+h5py
+joblib
+kaggle
+kagglehub >= 0.3.13
+lightgbm
+numpy
+openml
+openpyxl
+optuna
+pandas >= 2.2.2
+peft
+pytabkit
+pytest
+python-dotenv
+sap_rpt_oss @ git+https://github.com/SAP-samples/sap-rpt-1-oss@v1.1.2
+scikit-learn
+sentence_transformers
+scipy
+skrub
+streamlit
+tabdpt >= 1.1.9
+tabicl
+tabpfn >= 6.0.6
+tabpfn_extensions >= 0.2.2
+tabstar >= 1.1.12
+torch >= 2.6.0
+torchvision
+tqdm
+transformers >= 4.49.0
+xgboost
+wandb

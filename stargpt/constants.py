@@ -2,14 +2,16 @@ import os
 
 from dotenv import load_dotenv
 
+# Load environment variables from .env file
 load_dotenv()
 
-WANDB_API_KEY = "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"
-WANDB_ENTITY = "tabular_data"
-HF_TOKEN = "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"
+# API Keys and Tokens (read from environment variables)
+WANDB_API_KEY = os.getenv("WANDB_API_KEY", "")
+WANDB_ENTITY = os.getenv("WANDB_ENTITY", "tabular_data")
+HF_TOKEN = os.getenv("HF_TOKEN", "")
 os.environ["HF_TOKEN"] = HF_TOKEN
-KAGGLE_USERNAME = "shohamgrunblat"
-KAGGLE_KEY = "KGAT_5e15f00ca0d0a35ed695fbe6a84a5c70"
+KAGGLE_USERNAME = os.getenv("KAGGLE_USERNAME", "")
+KAGGLE_KEY = os.getenv("KAGGLE_KEY", "")
 TIME_BUDGET = int(os.getenv("TIME_BUDGET", 60 * 60 * 4))
 MONITOR = os.getenv("MONITOR") is not None
 MEMORY = os.getenv("MEMORY") is not None
